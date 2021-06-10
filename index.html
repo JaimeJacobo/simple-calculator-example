@@ -8,57 +8,20 @@
 </head>
 <body>
 
+  <h1>I'm the title written in HTML</h1>
 
-  <script>
+  <div id="myDiv">
+    <p id="1" class="example">First</p>
+    <p id="2">Second</p>
+    <p id="3" class="example">Third</p>
+  </div>
 
-    // const firstValue = parseInt(prompt('Introduce first value'))
-    // const operator = prompt('Introduce the operator')
-    // const secondValue = parseInt(prompt('Introduce second value'))
-
-    // if(operator === '+'){
-    //   console.log(firstValue + secondValue)
-    // } else {
-    //   console.log(firstValue - secondValue)
-    // }
-
-
-    const playerName = prompt('What\'s your name?')
-    const randomNumber = Math.floor(Math.random() * 100) + 1
-    let chosenNumber = parseInt(prompt('Choose a number from 1 to 100'))
-    let countForTries = 0
-
-    for(let i = 0; i < 1; i++){
-      if(randomNumber !== chosenNumber){
-        countForTries++
-        if(randomNumber > chosenNumber){
-          console.log('It is more')
-        } else if(randomNumber < chosenNumber){
-          console.log('It is less')
-        }
-        chosenNumber = parseInt(prompt('Choose a number from 1 to 100'))
-        i--
-      }
-    }
-    console.log(`${playerName} wins! You needed ${countForTries} tries`)
-
-    // while(randomNumber !== chosenNumber){
-    //   countForTries++
-    //   if(randomNumber > chosenNumber){
-    //     console.log('It is more')
-    //   } else if(randomNumber < chosenNumber){
-    //     console.log('It is less')
-    //   }
-    //   chosenNumber = parseInt(prompt('Choose a number from 1 to 100'))
-    // }
+  <button id="myButton">Click on me</button>
+  
+  <p>Number of clicks:</p>
+  <p id="counter"></p>
 
 
-
-
-  </script>
-
-
-
-
-
+  <script src="script.js"></script>
 </body>
 </html>
