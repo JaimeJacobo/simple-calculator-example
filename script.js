@@ -1,4 +1,4 @@
-  // const firstValue = parseInt(prompt('Introduce first value'))
+   // const firstValue = parseInt(prompt('Introduce first value'))
   // const operator = prompt('Introduce the operator')
   // const secondValue = parseInt(prompt('Introduce second value'))
 
@@ -69,3 +69,68 @@ myButton.addEventListener('click', function(){
 
 counterParagraph.innerText = counterForClicks
 
+
+// console.log(document.querySelectorAll('.listElement'))
+
+
+
+const div2 = document.getElementsByTagName('div')[1]
+
+let allNewParagraphs = ''
+
+document.getElementById("secondButton").addEventListener('click', function(){
+  allNewParagraphs += '<p>Whatever you want</p>'
+  div2.innerHTML = allNewParagraphs
+})
+ 
+
+
+
+// const firstFunction = function(){
+//   const hello = 'hello22'
+//   console.log(hello)
+//   return hello
+// }
+
+// const secondFunction = function(){
+//   const hello = 'hello33'
+//   console.log(hello)
+//   return hello
+// }
+
+
+
+// const animals = ['bat', 'cat', 'dog', 'snake']
+
+// function animal(arr){
+//   let arrString = ''
+//   for (let i = 0; i < arr.length; i++){
+//     // arrString = arrString.concat(arr[i])
+//     // arrString = arrString + arr[i]
+//     arrString += arr[i]
+//   }
+//   return arrString
+// }
+
+// console.log(animal(animals))
+//Create a function that receives an array and return a string with all of the arrays items concatenated
+
+//Example: 'batcatdogsnake'
+
+
+
+// console.log(document.getElementById('title').innerText)
+
+const myInput = document.getElementById('myInput')
+// console.log(myInput)
+
+myInput.addEventListener('input', function(event){
+  console.log(event)
+  // console.log(myInput.value)
+})
+
+document.getElementById('submitButton').addEventListener('click', function(event){
+  console.log(event)
+  console.log(event.target.innerText)
+  // console.log(myInput.value)
+})
