@@ -1,12 +1,3 @@
-   // const firstValue = parseInt(prompt('Introduce first value'))
-  // const operator = prompt('Introduce the operator')
-  // const secondValue = parseInt(prompt('Introduce second value'))
-
-  // if(operator === '+'){
-  //   console.log(firstValue + secondValue)
-  // } else {
-  //   console.log(firstValue - secondValue)
-  // }
 
 
   // document. --> Almost all of commands to modify the DOM of our web page start with document.
@@ -68,6 +59,7 @@ myButton.addEventListener('click', function(){
 })
 
 counterParagraph.innerText = counterForClicks
+
 
 
 // console.log(document.querySelectorAll('.listElement'))
