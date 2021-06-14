@@ -25,10 +25,6 @@ button.addEventListener('click', function(){
       result.innerText = firstValue / secondValue
     }
   }
-
-  firstValue.value = ''
-  secondValue.value = ''
-
 })
 
 
